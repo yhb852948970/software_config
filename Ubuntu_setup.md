@@ -3,10 +3,10 @@
 ## install packages
 1. Packages must to insatll <br />
   ```
-sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev eclipse-cqt nautilus- open-terminal
+sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev eclipse-cqt nautilus-open-terminal gimp
  ```
 
-2. In the software center, install "Ubuntu restricted extras", "VLC", "SMPlayer", "Audacious", "GIMP". <br /> 
+2. In the software center, install "Ubuntu restricted extras", "VLC", "SMPlayer", "Audacious". <br /> 
 
 3. Optional to install "WPS" and then the support fonts, "wps-office-fonts".
 
