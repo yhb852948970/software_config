@@ -37,8 +37,7 @@ im-config
   ```
 change to *enabled=0*
 
-8. config editor
-
+8. config editor <br />
 e.g. *gedit* and *atom*
 
 ## Useful softwares
