@@ -37,7 +37,8 @@ im-config
   ```
 change to *enabled=0*
 
-8. setup gedit
+8. setup editor
+e.g. *gedit* and *atom*
 
 ## Useful softwares
 1. simple photo editing, "Shotwell photo manage" (already installed) <br />
