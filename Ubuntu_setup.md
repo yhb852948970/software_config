@@ -1,10 +1,18 @@
-# Ubuntu setup for new installation
+Ubuntu setup for new installation
+=================================
 
 ## install packages
-1. Packages must to insatll <br />
-  ```
-sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev eclipse-cqt nautilus-open-terminal gimp
- ```
+1. Packages to insatll <br />
+
+  - must install
+```
+sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator
+```
+
+  - optional to install
+``` 
+sudo apt-get install eclipse-cqt gimp
+```
 
 2. In the software center, install "Ubuntu restricted extras", "VLC", "SMPlayer", "Audacious". <br /> 
 
@@ -44,8 +52,8 @@ e.g. *gedit* and *atom*
 1. simple photo editing, "Shotwell photo manage" (already installed) <br />
 
 
-## GPU related 
-1. Install NVIDIA drivers
+# GPU related 
+##1. Install NVIDIA drivers
   ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo add-apt-repository --remove ppa:xorg-edgers/ppa
@@ -53,21 +61,13 @@ sudo add-apt-repository --remove ppa:mamarley/nvidia
 sudo apt-get install nvidia-367 nvidia-settings
   ```
 
-2. Switch to NVIDIA 
+##2. Switch to NVIDIA 
   ```
 prime-select nvidia
   ```
 
-3. check the version of NVIDIA driver
+##3. check the version of NVIDIA driver
   ```
 nvidia-smi
   ```
-  
-  
-## Others
 
-ln -s src dst
-
-ldd // check the .so
-
-echo $?	// output the return/exit value

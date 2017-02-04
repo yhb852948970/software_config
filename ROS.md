@@ -1,56 +1,58 @@
-# ROS terminal command
+ROS terminal command
+====================
 
-## rosdep
-```
+# roscore
+##1. rosdep
+  ```
 rosdep update
 rosdep install -y --from-paths . --ignore-src --rosdistro=indigo
-```
+  ```
 
-## rosrun
-```
+##2. rosrun
+  ```
 rosrun [--prefix cmd] [--debug] PACKAGE EXECUTABLE [ARGS]
-```
-e.g. `rosrun turtlesim turtlesim_node __name:=my_turtle`
+  ```
+- e.g. `rosrun turtlesim turtlesim_node __name:=my_turtle`
 
-## launch
+##3. launch
 check the usage with `roslaunch -h`
 
-## rostopic
+##4. rostopic
 ```
 rostopic list -v
 ```
 
-## rosbag
-record all the topics, using
-```
+##5. rosbag
+- record all the topics, using
+  ```
 rosbag record -a
-```
-record the topics we interested in 
-```
+  ```
+- record the topics we interested in 
+  ```
 rosbag record -O subset /topic1/name /topic2/name
-```
-check the info of a bag
-```
+  ```
+- check the info of a bag
+  ```
 rosbag info <bagfile>
-```
-change the rate of publishing topics
-```
+  ```
+- change the rate of publishing topics
+  ```
 rosbag play -r 2 <bagfile>
-```
+  ```
 
 
-## TF related
-### TF echo
-```
+# TF related
+##1. TF echo
+  ```
 rosrun tf tf_echo <source frame> <target frame>
-```
-e.g. `rosrun tf tf_echo /map /odom`
+  ```
+- e.g. `rosrun tf tf_echo /map /odom`
 
-### View Frames
-```
+##2. View Frames
+  ```
 rosrun tf2_tools view_frames.py
 evince frames.pdf
-```
+  ```
 
 # ROS programming
 ## ROS CMakeLists.txt

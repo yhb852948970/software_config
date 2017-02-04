@@ -1,6 +1,8 @@
-# Github useful commands
+Github setup and useful commands
+================================
 
-## config github for the first time<br />
+#1. config github for the first time
+##1.1 setup user id and email
 ```
  git config --global user.name "yhb852948970" 
  git config --global user.email "kevin07yhb@gmail.com" 
@@ -12,7 +14,7 @@ git config --list
 ```
 the above files are stored in *~/.gitconfig* <br />
 
-## SSH Key setting
+##1.2 SSH Key setting
 ```
 ssh-keygen -t rsa -C "kevin07yhb@gmail.com"
 ```
@@ -23,46 +25,48 @@ cat ~/.ssh/id_rsa.pub
 Paste the key in id_rsa.pub <br />
 Using `ssh -T git@github.com` to check if the setting is successful. <br />
 
-## git push 
-For the first time, we run <br />
+
+#2. Github useful commands
+##2.1 git push 
+For the first time, we run 
 ```
 git push -u origin BRANCH-NAME
 ```
 
-## git pull
+##2.2 git pull
 ```
 git pull origin BRANCH-NAME
 ```
-pull from a branch other than master <br />
+###pull from a branch other than master <br />
 
-Method1:
+- Method1:
 ```
 git checkout -b BRANCH-NAME origin/BRANCH-NAME
 ```
-Method2:
+- Method2:
 ```
 git clone -b BRANCH-NAME --single-branch GIT-SSH
 ```
 
-## git log
-To see the files change in each commit <br />
+##2.3 git log
+To see the files change in each commit
 ```
 git log --oneline
 ```
-To see the files changed in each commit, using <br />
+To see the files changed in each commit, using 
 ```
 git log --summary
 ```
-To see the details of changing files, using <br />
+To see the details of changing files, using
 ```
 git log -p
 ```
 
-## Compare branches
+##2.4 Compare branches
 *https://help.github.com/articles/comparing-commits-across-time/*
 
 
-## keep forks up-to-date
+##2.5 keep forks up-to-date
 ```
 git remote add upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 git remote -v
@@ -71,7 +75,7 @@ git merge upstream/branch-name
 git push
 ```
 
-## Steps to merge multiple commits into one <br />
+##2.6 Steps to merge multiple commits into one <br />
 ```
 git log
 git rebase --interactive HEAD~"#of-commits-want-to-merge"
@@ -82,23 +86,25 @@ change the commit message accordingly <br />
 git push -u origin haibo --force
 ```
 If typos are made in git rebase, use abort to undo.<br />
+```
 git rebase --abort*  
+```
 
-## Change last commit
+##2.7 Change last commit
 Stage the changes first and then <br />
 ```
 git commit --amend
 git commit --amend -m MESSAGE
 ```
 
-## Create a git project from scratch
+##2.8 Create a git project from scratch
 ```
 git init
 git remote add
 git remote add origin git@github.com:USER-NAME/REPOSITORY-NAME.git
 ```
 
-## git diff
+##2.9 git diff
 compare current file with last commit <br />
 ```
 git diff HEAD
@@ -116,7 +122,7 @@ See staged, non-commited changes <br />
 git diff --cached
 ```
 
-## git branch
+##2.10 git branch
 To check all the existing branchs, using 
 ```
 git branch -a
@@ -126,21 +132,21 @@ To create new branch, using
 git checkout -b new-branch-name
 ```
 
-## git checkout 
-1. make HEAD points to a branch <br />
+##2.11 git checkout 
+###2.11.1 make HEAD points to a branch 
 ```
 git checkout branch-name
 ```
-2. make HEAD points to a commit <br />
+###2.11.2 make HEAD points to a commit 
 ```
 git checkout commit-name
 ```
-3. discard change in the file since last commit <br />
+###2.11.3 discard change in the file since last commit 
 ```
 git checkout -- file-name
 ```
 
-## git useful commands
+# other commands
 
 the opposite to `git add` is `git reset` <br />
 ```
