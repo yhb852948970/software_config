@@ -23,7 +23,7 @@ sudo apt-get install eclipse-cqt gimp
 sudo apt-get install texlive-fonts-recommended
   ```
 
-5. Optional to isntall googel pinyi
+5. To isntall googel pinyin
   ```
 sudo apt-get install fcitx-googlepinyin
 im-config
