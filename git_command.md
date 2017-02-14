@@ -6,7 +6,7 @@ Github setup and useful commands
 ```
  git config --global user.name "yhb852948970" 
  git config --global user.email "kevin07yhb@gmail.com" 
- git config --global clolor.ui auto 
+ git config --global color.ui auto 
 ```
 To check the current setting, <br />
 ```
