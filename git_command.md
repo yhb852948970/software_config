@@ -216,3 +216,8 @@ git checkout HEAD~10
 ```
 git reflog
 ```
+
+Local changes is several commits ahead of origin/remote, if we want to delete the changes, we should use this command,
+```
+git reset --hard origin/master
+```

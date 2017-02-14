@@ -4,13 +4,29 @@
 ### Author: Haibo YU ###
 ### Data: 21-Apr-2016 ###
 
-# Specify the minimum version for CMake
+################ basic template ################
 cmake_minimum_required(VERSION 2.8)
 
-# Project's name
 project( Tutorial )
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+SET(CMAKE_BUILD_TYPE Debug / Release  )
+
+find_package()
+
+include_directories()
+link_directories()
+
+add_library()
+add_executable()
+target_link_libraries( Tutorial MathFunctions )
+#################################################
+
+
+# other commands
 MESSAGE( "This a simple cmake tutorial for beginners." )
+
+option( DEBUG_ACTIVE "Enable Debug build" OFF )
 
 SET(CMAKE_CXX_COMPILER "g++")
 SET(CMAKE_BUILD_TYPE Debug / Release  )
@@ -30,25 +46,6 @@ find_package( OpenCV 2.4 REQUIRED )
 find_package(Boost 1.5 COMPONENTS program_options REQUIRED)
 find_package(CUDA 6.5 REQUIRED)
 find_package(CUDA 6.5 EXACT REQUIRED)
-
-
-# link the excutable with libraries
-target_link_libraries( Tutorial MathFunctions )
-link_directories(${ZED_LIBRARY_DIR})
-
-
-# configure a header file to pass some of the CMake settings to the source code
-configure_file (
-	"${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
-	"${PROJECT_BINARY_DIR}/TutorialConfig.h"	
-)
-
-
-## The below code should be written in the configuration file instead here
-## The contents between the @@ are the value set in this CMakeLists file and will be passed to the header file
-
-#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
-#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
 
 
 ### cmake variables
@@ -71,41 +68,28 @@ install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
           DESTINATION include)
 install (DIRECTORY  launch/
           DESTINATION, ${MY_LAUNCH})
+          
+set_proterties
+get_proterties
 
 # EXECUTABLE
 add_definitions(-std=c++11)# -m64) #-Wall)
-#add_definitions(-std=c++0x)# -m64) #-Wall)
-
 ADD_DEFINITIONS(-DBOOST_THREAD_USE_LIB=ON)
 
 add_subdirectory (dir1) # automaticly find the CMakeFiles.txt files in the dirs
 include (file1.cmake) # re-use the exported cmake files
 
-
-file(GLOB variable [RELATIVE path] [globbing expressions]...)
-#FILE(GLOB_RECURSE SRC_FILES "${SRC_FOLDER}/*.cpp")
-
-generate_dynamic_reconfigure_options(
-  cfg/Zed.cfg
-)
+add_library(foo IMPORTED)
+set_proterty(TARGET foo PROPERTY
+              IMPORTED_LOCATION /path/to/lib)
+              
 add_dependencies(zed_wrapper_node ${PROJECT_NAME}_gencfg)
+
 
 #Add all files in subdirectories of the project in
 # a dummy_target so qtcreator have access to all files
 FILE(GLOB_RECURSE extra_files ${CMAKE_SOURCE_DIR}/*)
 add_custom_target(dummy_${PROJECT_NAME} SOURCES ${extra_files})
-
-option( DEBUG_ACTIVE "Enable Debug build" OFF )
-
-#### newly added ####
-set_proterties
-get_proterties
-add_subdirectory (dir1)
-include(file1.cmake)
-
-add_library(foo IMPORTED)
-set_proterty(TARGET foo PROPERTY
-              IMPORTED_LOCATION /path/to/lib)
 
 #################### CMAKE for CUDA #######################
 find_package(CUDA 7.5 REQUIRED)

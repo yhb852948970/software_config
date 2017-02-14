@@ -69,5 +69,10 @@ the *-a* option is used to append to the file instead of rewrite the file. <br /
   ```
   echo $?
   ```
+
+##15. redirect terminal output to a file
+  ```
+  command >> file.txt 2>&1
+  ```
   
   
