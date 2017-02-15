@@ -48,6 +48,19 @@ change to *enabled=0*
 8. config editor <br />
 e.g. *gedit* and *atom*
 
+9. install gtest
+  ```
+  sudo apt-get install libgtest-dev
+  ```
+  This package only install source files and we need to compile by ourselves. <br />
+  
+  ```
+  cd /usr/src/gtest
+  sudo cmake .
+  sudo make
+  sudo cp *.a /usr/lib
+  ```
+
 ## Useful softwares
 1. simple photo editing, "Shotwell photo manage" (already installed) <br />
 

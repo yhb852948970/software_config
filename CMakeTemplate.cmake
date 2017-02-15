@@ -72,6 +72,9 @@ install (DIRECTORY  launch/
 set_proterties
 get_proterties
 
+find_library(PROTOBUF_LIBRARY protobuf HINTS /usr/lib/x86_64-linux-gun)
+target_link_library (test PUBLIC ${PROTOBUF_LIBRARY})
+
 # EXECUTABLE
 add_definitions(-std=c++11)# -m64) #-Wall)
 ADD_DEFINITIONS(-DBOOST_THREAD_USE_LIB=ON)
