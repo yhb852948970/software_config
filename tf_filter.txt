@@ -1,0 +1,1 @@
+rosbag filter /home/haibo/Hope/2052_gmapping/MXA/mxa_004/mxasestoagv004_2017-01-05-12-05-24_220.bag ~/Desktop/output.bag 'topic == "clock" or topic == "laser_1_scan" or topic == "laser_2_scan" or topic == "odom" or topic == "particlecloud" or topic == "raw_yaw_angle" or topic == "tf" and m.transforms[0].header.frame_id != "map" and m.transforms[0].child_frame_id != "/map"'

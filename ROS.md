@@ -42,17 +42,7 @@ rosbag play -r 2 <bagfile>
 
 
 # TF related
-##1. TF echo
-  ```
-rosrun tf tf_echo <source frame> <target frame>
-  ```
-- e.g. `rosrun tf tf_echo /map /odom`
-
-##2. View Frames
-  ```
-rosrun tf2_tools view_frames.py
-evince frames.pdf
-  ```
+Using ros bag to publish TF, but remove a specific frame in that tf.[here](tf_filter.txt)
 
 # ROS programming
 ## ROS CMakeLists.txt
