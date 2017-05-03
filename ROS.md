@@ -39,7 +39,11 @@ rosbag info <bagfile>
   ```
 rosbag play -r 2 <bagfile>
   ```
-
+##6. rostest
+- run test for specific package
+  ```
+  catkin_make run_tests -DCATKIN_WHITELIST_PACKAGES="package_name"
+  ```
 
 # TF related
 Using ros bag to publish TF, but remove a specific frame in that tf.[here](tf_filter.txt)
