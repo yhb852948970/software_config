@@ -65,6 +65,10 @@ To check commit log for a file, using
 ```
 git log filename
 ```
+Check git log with graph
+```
+git log --graph
+```
 
 ##2.4 Compare branches
 *https://help.github.com/articles/comparing-commits-across-time/*
