@@ -131,7 +131,7 @@ git diff --cached
 ```
 
 ##2.10 git branch
-To check all the existing branchs, using 
+To check all the existing branchs, including origin and upstream branches, using 
 ```
 git branch -a
 ```
