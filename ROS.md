@@ -31,10 +31,6 @@ rosbag record -a
   ```
 rosbag record -O subset /topic1/name /topic2/name
   ```
-- check the info of a bag
-  ```
-rosbag info <bagfile>
-  ```
 - change the rate of publishing topics
   ```
 rosbag play -r 2 <bagfile>
