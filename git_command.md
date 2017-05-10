@@ -189,12 +189,6 @@ Changes the file name and prepares it for commit <br />
 git mv file-original-name file-renamed
 ```
 
-merge a branch to curent branch <br />
-```
-git merge [--no-ff] branch-to-be-merged 
-```
-the *--no-ff* option is used to avoid fast-forward merge <br />
-
 ```
 git commit -am "Delete stuff"
 ```
@@ -219,10 +213,6 @@ git checkout HEAD^
 10-level back <br />
 ```
 git checkout HEAD~10
-```
-
-```
-git reflog
 ```
 
 Local changes is several commits ahead of origin/remote, if we want to delete the changes, we should use this command,
