@@ -2,7 +2,7 @@ ROS terminal command
 ====================
 
 # roscore
-##1. rosdep
+- 1. rosdep
   ```
 rosdep update
 rosdep install -y --from-paths . --ignore-src --rosdistro=indigo
