@@ -73,7 +73,11 @@ set_proterties
 get_proterties
 
 find_library(PROTOBUF_LIBRARY protobuf HINTS /usr/lib/x86_64-linux-gun)
-target_link_library (test PUBLIC ${PROTOBUF_LIBRARY})
+if(PROTOBUF_LIBRARY)
+    target_link_library (test PUBLIC ${PROTOBUF_LIBRARY})
+else()
+    # Do sth here
+endif()
 
 # EXECUTABLE
 add_definitions(-std=c++11)# -m64) #-Wall)
