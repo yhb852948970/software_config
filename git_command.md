@@ -8,6 +8,11 @@ Github setup and useful commands
  git config --global user.email "kevin07yhb@gmail.com" 
  git config --global color.ui auto 
 ```
+Config global gitignore
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
+
 To check the current setting, <br />
 ```
 git config --list
