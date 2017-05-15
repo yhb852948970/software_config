@@ -74,5 +74,8 @@ the *-a* option is used to append to the file instead of rewrite the file. <br /
   ```
   command >> file.txt 2>&1
   ```
-  
-  
+##16. using sudo without password
+  ```
+  sudo visudo
+  ```
+Add "haibo ALL=NOPASSWD: ALL"   
