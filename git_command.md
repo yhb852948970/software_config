@@ -90,7 +90,6 @@ git push
 
 ##2.6 Steps to merge multiple commits into one <br />
 ```
-git log
 git rebase --interactive HEAD~"#of-commits-want-to-merge"
 ```
 keep the first one as pick, all the others as s (squash) <br />
@@ -165,19 +164,6 @@ the opposite to `git add` is `git reset` <br />
 ```
 git reset FILENAME
 ```
-Undo last commit, preserving local changes <br />
-```
-git reset --soft HEAD~1 
-```
-
-Undo last commit, without preserving local changes <br />
-```
-git reset --hard HEAD~1 <br />
-```
-Got back to a previous commit <br />
-```
-git reset --hard HASH-VALUE
-```
 
 Deletes the file from the working directory and stages the deletion <br />
 ```
@@ -194,10 +180,6 @@ Changes the file name and prepares it for commit <br />
 git mv file-original-name file-renamed
 ```
 
-```
-git commit -am "Delete stuff"
-```
-
 show the last commit info <br />
 ```
 git show COMMIT-HASH
@@ -208,19 +190,4 @@ If a branch hasn't been merged, we need to add the *--force* option. <br />
 ```
 git branch -d BRANCH-NAME [--force]
 git rebase branch-name
-```
-
-Move the HEAD point to previous commits <br />
-1-level back <br />
-```
-git checkout HEAD^
-```
-10-level back <br />
-```
-git checkout HEAD~10
-```
-
-Local changes is several commits ahead of origin/remote, if we want to delete the changes, we should use this command,
-```
-git reset --hard origin/master
 ```
