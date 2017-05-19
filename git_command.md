@@ -46,13 +46,13 @@ git pull origin BRANCH-NAME
 ```
 pull from a branch other than master <br />
 
-- Method1:
+- Method1: create from local branch
 ```
 git checkout -b BRANCH-NAME origin/BRANCH-NAME
 ```
-- Method2:
+- Method2: clone from remote repo
 ```
-git clone -b BRANCH-NAME --single-branch GIT-SSH
+git clone -b BRANCH-NAME --single-branch GIT-HASH or remote/branch-name 
 ```
 
 2.3 git log
