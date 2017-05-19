@@ -76,13 +76,9 @@ git log filename
 *https://help.github.com/articles/comparing-commits-across-time/*
 
 
-2.5 keep forks up-to-date
+2.5 add remote (origin/upstream) branch for a local report
 ```
 git remote add upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
-git remote -v
-git fetch upstream
-git merge upstream/branch-name
-git push
 ```
 
 2.6 Steps to merge multiple commits into one <br />
