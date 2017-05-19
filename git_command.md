@@ -37,7 +37,7 @@ Using `ssh -T git@github.com` to check if the setting is successful. <br />
 2.1 git push 
 For the first time, we run 
 ```
-git push -u origin BRANCH-NAME
+git push -u origin BRANCH-NAME [--force]
 ```
 Using "+" sign to force update for this repo
 ```
@@ -87,16 +87,13 @@ git rebase --interactive HEAD~"#of-commits-want-to-merge"
 ```
 keep the first one as pick, all the others as s (squash) <br />
 change the commit message accordingly <br />
-```
-git push -u origin haibo --force
-```
+
 If typos are made in git rebase, use abort to undo.<br />
 ```
 git rebase --abort*  
 ```
 
 2.7 Change last commit
-Stage the changes first and then <br />
 ```
 git commit --amend
 git commit --amend -m MESSAGE
