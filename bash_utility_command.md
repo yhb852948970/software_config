@@ -78,4 +78,7 @@ the *-a* option is used to append to the file instead of rewrite the file. <br /
   ```
   sudo visudo
   ```
-Add "haibo ALL=NOPASSWD: ALL"   
+Add "haibo ALL=NOPASSWD: ALL"  
+
+17. add desktop/launch icon for an application
+/usr/share/applications/firefox.desktop
