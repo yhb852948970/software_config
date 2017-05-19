@@ -20,7 +20,7 @@ git config --list
 ```
 the above files are stored in *~/.gitconfig* <br />
 
-##1.2 SSH Key setting
+1.2 SSH Key setting
 ```
 ssh-keygen -t rsa -C "kevin07yhb@gmail.com"
 ```
@@ -44,7 +44,7 @@ git push -u origin BRANCH-NAME
 ```
 git pull origin BRANCH-NAME
 ```
-###pull from a branch other than master <br />
+pull from a branch other than master <br />
 
 - Method1:
 ```
