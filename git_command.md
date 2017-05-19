@@ -39,6 +39,10 @@ For the first time, we run
 ```
 git push -u origin BRANCH-NAME
 ```
+Using "+" sign to force update for this repo
+```
+git push origin +branch-name
+```
 
 2.2 git pull
 ```
@@ -56,25 +60,16 @@ git clone -b BRANCH-NAME --single-branch GIT-HASH or remote/branch-name
 ```
 
 2.3 git log
-To see the files change in each commit
+
 ```
 git log --oneline
-```
-To see the files changed in each commit, using 
-```
 git log --summary
-```
-To see the details of changing files, using
-```
+git log --graph
 git log -p
 ```
 To check commit log for a file, using
 ```
 git log filename
-```
-Check git log with graph
-```
-git log --graph
 ```
 
 2.4 Compare branches
