@@ -148,6 +148,12 @@ git checkout commit-name
 git checkout -- file-name
 ```
 
+2.12 Using git stash
+```
+git stash save all
+git stash list
+git stash pop stash@{0}
+
 # other commands
 
 the opposite to `git add` is `git reset` <br />
