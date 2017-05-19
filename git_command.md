@@ -2,6 +2,7 @@ Github setup and useful commands
 ================================
 
 #1. config github for the first time
+
 ##1.1 setup user id and email
 ```
  git config --global user.name "yhb852948970" 
