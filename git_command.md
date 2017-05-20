@@ -1,67 +1,65 @@
 Github setup and useful commands
 ================================
 
-1. config github for the first time
+# 1. config github for the first time
 
-1.1 setup user id and email
-```
+## 1.1 setup user id and email
+```bash
  git config --global user.name "yhb852948970" 
  git config --global user.email "kevin07yhb@gmail.com" 
  git config --global color.ui auto 
 ```
-Config global gitignore
-```
+## 1.2 Config global gitignore
+```bash
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
 To check the current setting, <br />
-```
+```bash
 git config --list
 ```
 the above files are stored in *~/.gitconfig* <br />
 
-1.2 SSH Key setting
-```
+## 1.3 SSH Key setting
+```bash
 ssh-keygen -t rsa -C "kevin07yhb@gmail.com"
 ```
 go to *GitHub* -> *Accout Settings* -> *SSH Keys* -> *Add SSH Key* <br />
-```
+```bash
 cat ~/.ssh/id_rsa.pub 
 ```
 Paste the key in id_rsa.pub <br />
 Using `ssh -T git@github.com` to check if the setting is successful. <br />
 
+# 2. Github useful commands
 
-2. Github useful commands
-
-2.1 git push 
+## 2.1 git push 
 For the first time, we run 
-```
+```bash
 git push -u origin BRANCH-NAME [--force]
 ```
 Using "+" sign to force update for this repo
-```
+```bash
 git push origin +branch-name
 ```
 
-2.2 git pull
-```
+## 2.2 git pull
+```bash
 git pull origin BRANCH-NAME
 ```
 pull from a branch other than master <br />
 
-- Method1: create from local branch
-```
+### Method1: create from local branch
+```bash
 git checkout -b BRANCH-NAME origin/BRANCH-NAME
 ```
-- Method2: clone from remote repo
-```
+### Method2: clone from remote repo
+```bash
 git clone -b BRANCH-NAME --single-branch GIT-HASH or remote/branch-name 
 ```
 
-2.3 git log
-
-```
+## 2.3 git log
+```bash
 git log --oneline
 git log --summary
 git log --graph
@@ -70,86 +68,87 @@ git log -p
 To check commit log for a file, using
 ```
 git log filename
-```
+```bash
 
-2.4 Compare branches
+## 2.4 Compare branches
 *https://help.github.com/articles/comparing-commits-across-time/*
 
 
-2.5 add remote (origin/upstream) branch for a local report
-```
+## 2.5 add remote (origin/upstream) branch for a local report
+```bash
 git remote add upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 ```
 
-2.6 Steps to merge multiple commits into one <br />
-```
+## 2.6 Steps to merge multiple commits into one
+```bash
 git rebase --interactive HEAD~"#of-commits-want-to-merge"
 ```
 keep the first one as pick, all the others as s (squash) <br />
 change the commit message accordingly <br />
 
 If typos are made in git rebase, use abort to undo.<br />
-```
+```bash
 git rebase --abort*  
 ```
 
-2.7 Change last commit
-```
+## 2.7 Change last commit
+```bash
 git commit --amend
 git commit --amend -m MESSAGE
 ```
 
-2.8 Create a git project from scratch
-```
+## 2.8 Create a git project from scratch
+```bash
 git init
 git remote add
 git remote add origin git@github.com:USER-NAME/REPOSITORY-NAME.git
 ```
 
-2.9 git diff
-compare current file with last commit <br />
-```
-git diff HEAD
-```
-```
-git diff --staged
-git diff first-branch second-branch
-```
-See non-staged (non-added) changes to existing files <br />
-```
+## 2.9 git diff
+
+### 2.9.1 show upstaged changes
+```bash
 git diff
 ```
-See staged, non-commited changes <br />
+### 2.9.2 show staged changes
+```bash
+git diff --cached or --staged
 ```
-git diff --cached
+### 2.9.3 compare current file with last commit
+```bash
+git diff HEAD
+```
+### 2.9.4 compare changes in general
+```bash
+git diff first-branch second-branch
 ```
 
-2.10 git branch
-To check all the existing branchs, including origin and upstream branches, using 
-```
+## 2.10 git branch
+To check all the existing branchs, including origin and upstream branches, using <br />
+```bash
 git branch -a
 ```
 To create new branch, using
-```
+```bash
 git checkout -b new-branch-name
 ```
 
-2.11 git checkout 
-2.11.1 make HEAD points to a branch 
-```
+## 2.11 git checkout 
+### 2.11.1 make HEAD points to a branch 
+```bash
 git checkout branch-name
 ```
-2.11.2 make HEAD points to a commit 
-```
+### 2.11.2 make HEAD points to a commit 
+```bash
 git checkout commit-name
 ```
-2.11.3 discard change in the file since last commit 
-```
+### 2.11.3 discard change in the file since last commit 
+```bash
 git checkout -- file-name
 ```
 
-2.12 Using git stash
-```
+## 2.12 Using git stash
+```bash
 git stash save all
 git stash list
 git stash pop stash@{0}
@@ -183,7 +182,7 @@ git show COMMIT-HASH
 
 If a branch has been merged, we can use *-d* option to delete it. <br />
 If a branch hasn't been merged, we need to add the *--force* option. <br />
-```
+```bash
 git branch -d BRANCH-NAME [--force]
 git rebase branch-name
 ```
