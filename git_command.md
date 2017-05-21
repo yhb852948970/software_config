@@ -88,7 +88,11 @@ git log filename
 *https://help.github.com/articles/comparing-commits-across-time/*
 
 
-## 2.5 add remote (origin/upstream) branch for a local report
+## 2.5 add remote (origin/upstream) branch for a local repo
+```bash
+git remote add <short-name> <url>
+```
+e.g.
 ```bash
 git remote add upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 ```
