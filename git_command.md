@@ -50,10 +50,14 @@ git push -u upstream BRANCH-NAME
 ```bash
 git push --force
 ```
-### 2.1.2 force update for a specific branch
+### 2.1.3 force update for a specific branch
 ```bash
 git push origin BRANCH-NAME --force
 git push origin +branch-name
+```
+### 2.1.4 delete remote branch
+```bash
+git push origin --delete branch-name
 ```
 
 ## 2.2 git pull
