@@ -109,7 +109,10 @@ e.g.
 ```bash
 git remote add upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 ```
-
+### 2.5.4 remove a remote repo
+```bash
+git remote rm <repo-name>
+```
 ## 2.6 Steps to merge multiple commits into one
 ```bash
 git rebase --interactive HEAD~"#of-commits-want-to-merge"
