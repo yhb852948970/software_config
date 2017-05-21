@@ -29,7 +29,7 @@ ssh-keygen -t rsa -C "kevin07yhb@gmail.com"
 ```bash
 cat ~/.ssh/id_rsa.pub 
 ```
-- Step 3. Add the key in github setting
+- Step 3. Add the key in github setting <br />
 *GitHub* -> *Accout Settings* -> *SSH Keys* -> *Add SSH Key*
 
 - Step 4. Paste the key in id_rsa.pub
