@@ -55,10 +55,6 @@ git push --force
 git push origin BRANCH-NAME --force
 git push origin +branch-name
 ```
-### 2.1.3 Using "+" sign to force update for a specific branch
-```bash
-
-```
 
 ## 2.2 git pull
 ```bash
@@ -81,6 +77,7 @@ git log --oneline
 git log --summary
 git log --graph
 git log -p
+git log --stat
 ```
 To check commit log for a file, using
 ```bash
