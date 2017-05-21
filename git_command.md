@@ -11,7 +11,7 @@ Github setup and useful commands
 ```
 ## 1.2 Config global gitignore
 ```bash
-git config --global core.excludesfile ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore
 ```
 
 To check the current setting, <br />
