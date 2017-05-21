@@ -161,14 +161,14 @@ git checkout commit-name
 git checkout -- file-name
 ```
 
-## 2.12 Using git stash
+## 2.12 git stash
 ```bash
 git stash save all
 git stash list
 git stash pop stash@{0}
 ```
 
-## 2.13 Using git rm
+## 2.13 git rm
 ### 2.13.1 Deletes the file from the working directory and stages the deletion
 ```bash
 git rm filename
@@ -179,13 +179,13 @@ git rm filename
 git rm [-r] --cached filename
 ```
 
-# other commands
-
-the opposite to `git add` is `git reset` <br />
+### 2.14 git reset
+- `git reset` is the opposite of `git add`. It can be used to remove staged files.  <br />
 ```
 git reset FILENAME
 ```
 
+# other commands
 
 show the last commit info <br />
 ```
