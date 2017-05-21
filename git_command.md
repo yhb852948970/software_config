@@ -169,22 +169,24 @@ git checkout -- file-name
 git stash save all
 git stash list
 git stash pop stash@{0}
+```
+
+## 2.13 Using git rm
+### 2.13.1 Deletes the file from the working directory and stages the deletion
+```bash
+git rm filename
+```
+- if we delete the file from file system, we also need to run the above command to stage the deletion
+### 2.13.2 Removes the file from version control but preserves the file locally <br />
+```
+git rm [-r] --cached filename
+```
 
 # other commands
 
 the opposite to `git add` is `git reset` <br />
 ```
 git reset FILENAME
-```
-
-Deletes the file from the working directory and stages the deletion <br />
-```
-git rm FILENAME
-```
-
-Removes the file from version control but preserves the file locally <br />
-```
-git rm [-r] --cached FILENAME
 ```
 
 Changes the file name and prepares it for commit <br />
