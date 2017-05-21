@@ -189,10 +189,6 @@ the opposite to `git add` is `git reset` <br />
 git reset FILENAME
 ```
 
-Changes the file name and prepares it for commit <br />
-```
-git mv file-original-name file-renamed
-```
 
 show the last commit info <br />
 ```
