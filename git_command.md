@@ -14,22 +14,29 @@ Github setup and useful commands
 git config --global core.excludesfile ~/.gitignore
 ```
 
-To check the current setting, <br />
+To check the current setting,
 ```bash
 git config --list
 ```
-the above files are stored in *~/.gitconfig* <br />
+the above files are stored in *~/.gitconfig* 
 
 ## 1.3 SSH Key setting
+- Step 1. Generate the key from you new device
 ```bash
 ssh-keygen -t rsa -C "kevin07yhb@gmail.com"
 ```
-go to *GitHub* -> *Accout Settings* -> *SSH Keys* -> *Add SSH Key* <br />
+- Step 2. Get the key by 
 ```bash
 cat ~/.ssh/id_rsa.pub 
 ```
-Paste the key in id_rsa.pub <br />
-Using `ssh -T git@github.com` to check if the setting is successful. <br />
+- Step 3. Add the key in github setting
+*GitHub* -> *Accout Settings* -> *SSH Keys* -> *Add SSH Key*
+
+- Step 4. Paste the key in id_rsa.pub
+- Step 5. Check if the setting is successful by executing this command in the new added device
+```bash
+ssh -T git@github.com
+```
 
 # 2. Github useful commands
 
