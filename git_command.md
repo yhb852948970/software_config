@@ -41,13 +41,23 @@ ssh -T git@github.com
 # 2. Github useful commands
 
 ## 2.1 git push 
-For the first time, we run 
+### 2.1.1 Push and add upstream by *-u* option
 ```bash
-git push -u origin BRANCH-NAME [--force]
+git push -u upstream BRANCH-NAME
 ```
-Using "+" sign to force update for this repo
+### 2.1.2 Using *--force* option to force update for all the branches
+- force means replace instead of merge
 ```bash
+git push --force
+```
+### 2.1.2 force update for a specific branch
+```bash
+git push origin BRANCH-NAME --force
 git push origin +branch-name
+```
+### 2.1.3 Using "+" sign to force update for a specific branch
+```bash
+
 ```
 
 ## 2.2 git pull
