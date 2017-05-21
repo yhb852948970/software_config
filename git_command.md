@@ -179,10 +179,19 @@ git rm filename
 git rm [-r] --cached filename
 ```
 
-### 2.14 git reset
-- `git reset` is the opposite of `git add`. It can be used to remove staged files.  <br />
+## 2.14 git reset
+### 2.14.1 It can be used to remove staged files.  
+- `git reset` is the opposite of `git add`.   <br />
 ```
 git reset FILENAME
+```
+### 2.14.2 Revert back all the changes in the file systems
+```bash
+git reset --hard HASH
+```
+### 2.14.3 Revert back the changes back in git, but keep the file system untouched
+```bash
+git reset --soft HASH
 ```
 
 # other commands
