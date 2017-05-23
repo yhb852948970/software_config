@@ -231,3 +231,7 @@ If a branch hasn't been merged, we need to add the *--force* option. <br />
 git branch -d BRANCH-NAME [--force]
 git rebase branch-name
 ```
+
+```bash
+git remote prune origin
+```
