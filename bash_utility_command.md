@@ -82,3 +82,26 @@ Add "USERNAME ALL=NOPASSWD: ALL"
   ```bash
   more filename
   ```
+### 17. set up networks
+```bash
+sudo ifdown wlan0
+sudo ifup eth0
+sudo ifconfig eth0 up
+sudo dhclient eth0
+```
+
+```bash
+sudo nano /etc/network/interfaces
+```
+Add the follwing contents to this file
+
+auto eth0
+iface eth0 inet static
+address 192.168.88.x
+netmask 255.255.255.0
+#gateway 192.168.88.20
+
+auto wlan0
+iface wlan0 inet dhcp
+wpa-ssid HOPE4G+
+wpa-psk 123456abcd
