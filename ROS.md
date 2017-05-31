@@ -50,16 +50,3 @@ rosrun image_view extract_images _sec_per_frame:=0 _filename_format:="frame%04i.
 
 # TF related
 Using ros bag to publish TF, but remove a specific frame in that tf.[here](tf_filter.txt)
-
-# ROS programming
-## ROS CMakeLists.txt
-
-cmake_minimum_required() <br />
-project() <br />
-find_package() <br />
-add_message_files(), add_service_files(), add_action_files(), all catkin-specific <br />
-generate_messages(), catkin-specific <br />
-catkin_package(), catkin-specific <br />
-add_library(), add_executable(), target_link_libraries() <br />
-install() <br />
-catkin_add_gtest(), catkin_add_nosetests(), add_rostest(), add_rostest_gtest(), all catkin-specific <br />
