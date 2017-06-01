@@ -5,7 +5,8 @@ ROS terminal command
 ## 1. rosdep
   ```
 rosdep update
-rosdep install -y --from-paths . --ignore-src --rosdistro=indigo
+cd ~/catkin_ws
+rosdep install -y --from-paths ./src --ignore-src --rosdistro=indigo
   ```
 
 ## 2. rosrun
