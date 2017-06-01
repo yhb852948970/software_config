@@ -16,9 +16,10 @@ rosrun [--prefix cmd] [--debug] PACKAGE EXECUTABLE [ARGS]
 - e.g. `rosrun turtlesim turtlesim_node __name:=my_turtle`
 
 ## 3. launch
-### 3.1 check the usage with `roslaunch -h`
+### 3.1 Using "-h"
+check the usage with `roslaunch -h`
 ### 3.2 launch with gdb
-Add launch-prefix="xterm -e gdb --args" under <node> tag.
+Add launch-prefix="xterm -e gdb --args" under \<node\> tag.
 
 ## 4. rosbag
 ### 4.1 record all the topics, using
