@@ -117,6 +117,11 @@ git remote add upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 ```bash
 git remote rm <repo-name>
 ```
+### 2.5.5 clean cached remote repo
+```bash
+git remote prune origin
+```
+
 ## 2.6 Steps to merge multiple commits into one
 ```bash
 git rebase --interactive HEAD~"#of-commits-want-to-merge"
@@ -217,6 +222,10 @@ git reset --hard HASH
 ```bash
 git reset --soft HASH
 ```
+### 2.14.4 Undo last commit
+```bash
+git reset HEAD~
+```
 
 # other commands
 
@@ -230,8 +239,4 @@ If a branch hasn't been merged, we need to add the *--force* option. <br />
 ```bash
 git branch -d BRANCH-NAME [--force]
 git rebase branch-name
-```
-
-```bash
-git remote prune origin
 ```
