@@ -53,9 +53,18 @@ rosrun image_view extract_images _sec_per_frame:=0 _filename_format:="frame%04i.
   ```
 ## 7. kill roscore
 ```bash
+rosnode kill <node-name>
 killall -9 roscore
 killall -9 rosmaster
 ```
 
-# TF related
+## 8. Set and get logger level
+```bash
+rosservice list
+rosservice call /node_name/get_loggers
+rosservice call /node_name/set_logger_level <tab><tab>
+```
+Then change the logger name and level accordingly.
+
+# TF 
 Using ros bag to publish TF, but remove a specific frame in that tf.[here](tf_filter.txt)
