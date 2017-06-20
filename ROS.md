@@ -66,5 +66,11 @@ rosservice call /node_name/set_logger_level <tab><tab>
 ```
 Then change the logger name and level accordingly.
 
+## 9. Using mux
+```bash
+rosrun topic_tools mux output_topic_name input_topic_name_1 input_topic_name_2 mux:=node_name
+rosrun topic_tools mux cmd_vel move_base_cmd_vel joystick_cmd_vel mux:=mux_cmd_vel
+```
+
 # TF 
 Using ros bag to publish TF, but remove a specific frame in that tf.[here](tf_filter.txt)
