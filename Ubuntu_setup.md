@@ -6,7 +6,7 @@ Ubuntu setup for new installation
 
   - must install
 ```
-sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser
+sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser git
 ```
 
   - optional to install
