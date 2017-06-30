@@ -63,6 +63,9 @@ This package only install source files and we need to compile by ourselves. <br 
   sudo make
   sudo cp *.a /usr/lib
   ```
+### 11. install oracle-java
+The zip file can be find [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+
 
 ## Useful softwares
 ### 1. simple photo editing, "Shotwell photo manage" (already installed) <br />
