@@ -6,13 +6,16 @@ Ubuntu setup for new installation
 
   - must install
 ```
-sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser git filezilla
+sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser git filezilla gimp
 ```
 
   - optional to install
 ``` 
-sudo apt-get install eclipse-cqt gimp
+sudo apt-get install eclipse-cqt 
 ```
+  - other packages need to be installed by download.
+  1. angry ip scanner <br />
+  
 ### 2. after install terminator, using this command to set default terminal 
 ```bash
 gsettings set org.gnome.desktop.default-applications.terminal exec 'x-terminal-emulator'
