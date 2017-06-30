@@ -6,7 +6,7 @@ Ubuntu setup for new installation
 
   - must install
 ```
-sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser git
+sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser git filezilla
 ```
 
   - optional to install
@@ -65,6 +65,7 @@ This package only install source files and we need to compile by ourselves. <br 
   ```
 ### 11. install oracle-java
 The zip file can be find [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+The installation guide can be find from [here](http://www.wikihow.com/Install-Oracle-Java-on-Ubuntu-Linux).
 
 
 ## Useful softwares
