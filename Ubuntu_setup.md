@@ -11,7 +11,7 @@ sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboo
 
   - optional to install
 ``` 
-sudo apt-get install eclipse-cqt 
+sudo apt-get install eclipse-cqt libxmlrpc-c++8-dev minicom htop
 ```
   - other packages need to be installed by download.
   1. angry ip scanner <br />
