@@ -37,14 +37,21 @@ im-config
 ```
   
 ### 7. Setup nano editor
-  ```
-  cat ~/.nanorc
-  include /usr/share/nano/sh.nanorc 
-  include /usr/share/nano/c.nanorc 
-  include /usr/share/nano/xml.nanorc 
-  include /usr/share/nano/cmake.nanorc 
-  include /usr/share/nano/python.nanorc 
-  ```
+Put the conf.nanorc file into /usr/share/nano directory. <br />
+Add .nanorc config file. <br />
+```bash
+touch ~/.nanorc
+include /usr/share/nano/sh.nanorc 
+include /usr/share/nano/c.nanorc 
+include /usr/share/nano/xml.nanorc 
+include /usr/share/nano/cmake.nanorc 
+include /usr/share/nano/python.nanorc 
+```
+When we want to open rosenv file, using this command
+```bash
+nano ~/rosenv -Y conf
+```
+
 ### 8. Stop error reporting
 ```bash
 gksudo gedit /etc/default/apport
