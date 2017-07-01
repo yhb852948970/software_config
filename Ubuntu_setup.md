@@ -15,6 +15,7 @@ sudo apt-get install eclipse-cqt libxmlrpc-c++8-dev minicom htop
 ```
   - other packages need to be installed by download.
   1. angry ip scanner <br />
+  2. CLion <br />
   
 ### 2. after install terminator, using this command to set default terminal 
 ```bash
