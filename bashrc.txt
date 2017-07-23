@@ -28,13 +28,6 @@ export CPLUS_INCLUDE_PATH
 
 # My alias
 alias CUDA_CHECK='sudo ~/NVIDIA_CUDA-7.5_Samples/bin/x86_64/linux/release/deviceQuery'
-alias ZED_D='/usr/local/zed/tools/ZED\ Depth\ Viewer'
-alias ZED_E='/usr/local/zed/tools/ZED\ Explorer'
-alias matlab='/usr/local/MATLAB/R2015a/bin/matlab'
-
-alias pingobc='ping 192.168.88.10'
 alias renet='sudo service network-manager restart'
-alias sshcwt1='ssh hope@192.168.214.202'
-alias roslist='rostopic list -v'
 alias 'h=history | tail'
 alias 'hg=history | grep'
