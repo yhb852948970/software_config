@@ -6,12 +6,12 @@ Ubuntu setup for new installation
 
   - must install
 ```
-sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser git filezilla gimp gparted
+sudo apt-get install synaptic ssh gdebi inxi build-essential cmake-qt-gui libboost-all-dev libxine-dev  nautilus-open-terminal terminator chromium-browser git filezilla gimp gparted htop
 ```
 
   - optional to install
 ``` 
-sudo apt-get install eclipse-cqt libxmlrpc-c++8-dev minicom htop
+sudo apt-get install eclipse-cqt libxmlrpc-c++8-dev minicom
 ```
   - other packages need to be installed by download.
   1. angry ip scanner <br />
@@ -19,7 +19,7 @@ sudo apt-get install eclipse-cqt libxmlrpc-c++8-dev minicom htop
   
 ### 2. after install terminator, using this command to set default terminal 
 ```bash
-gsettings set org.gnome.desktop.default-applications.terminal exec 'x-terminal-emulator'
+sudo update-alternatives --config x-terminal-emulator
 ```
 
 ### 3. In the software center, install "Ubuntu restricted extras", "VLC", "SMPlayer", "Audacious". <br /> 
