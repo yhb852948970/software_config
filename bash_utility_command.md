@@ -41,14 +41,6 @@ grep -RHn "string_to_match"
 diff -u file1 file2
   ```
 
-### 8. create a soft link 
-  ```bash
-ln -s src dst
-  ```
-
-### 9. cat command for redirection 
-  - create a new file, `cat > filename`
-  - append to an existing file,`cat >> filename`
 
 ### 10. tee command to send outputs in two directions
   ```bash
