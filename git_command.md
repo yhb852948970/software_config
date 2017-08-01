@@ -80,12 +80,12 @@ git clone -b BRANCH-NAME --single-branch GIT-HASH or remote/branch-name
 git log --oneline
 git log --summary
 git log --graph
-git log -p
 git log --stat
 ```
 To check commit log for a file, using
 ```bash
 git log filename
+git log -p filename # generate patch for the file
 ```
 
 ## 2.4 Compare branches
