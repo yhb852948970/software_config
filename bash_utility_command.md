@@ -5,12 +5,6 @@ Bash utility commands
   ```
 sudo service network-manager restart
   ```
-
-### 2. check Ubuntu kernel version distribution 
-  ```
-lsb_release -a
-uname -r
-  ```
   
 ### 3. using GUI with sudo permission
   ```
@@ -35,6 +29,7 @@ grep -RHn "string_to_match"
   - Using *-n* to show line number of match in the file
   - Using *-H* to show to file name of a match
   - Using *-R* to search in the sub-folder recursively
+  - Using *-v* to do reverse search
 
 ### 6. diff command to compare two files 
   ```bash
