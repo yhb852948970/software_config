@@ -20,3 +20,12 @@ gdisk /dev/sda
 ```bash
 mount	UUID="899b755b-1da4-4d1d-9b1c-f762adb798e1"	/data/ext4
 ```
+mount as a loop
+```bash
+mount	-o	loop	UUID="7dd97bd2-4446-48fd-9d23-a8b03ffdd5ee"	/mnt
+```
+
+# 9. using dd to create a "0" file
+```bash
+dd	if=/dev/zero	of=/srv/loopdev	bs=1M	count=512
+```
