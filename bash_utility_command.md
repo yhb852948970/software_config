@@ -100,8 +100,12 @@ wpa-psk 123456abcd
 sudo apt-cache search <package> # search for a package
 sudo apt-cache show <package> # show the info of a package
 sudo apt-cache depends <package> # check dependencies of a package
+apt-cache pkgnames # print all the install package names
 ```
 ## 2. apt-get 
 ```bash
 sudo apt-get -d install <package> # download deb to /var/cache/apt/archives without installation
+sudo apt-get autoclean # delete partially downloaded packages, or packages no longer installed
+sudo apt-get clean # Removes all cached packages from/var/cache/apt/archives to free up disk space
+sudo apt-get -f install #Do a sanity check for broken packages. This tries to fix any “unmet dependency” messages.
 ```
