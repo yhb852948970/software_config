@@ -92,3 +92,9 @@ auto wlan0
 iface wlan0 inet dhcp
 wpa-ssid HOPE4G+
 wpa-psk 123456abcd
+
+
+# 17. search for packages
+```bash
+sudo apt-cache search 'PACKAGE-NAME'
+```
