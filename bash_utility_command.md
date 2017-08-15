@@ -94,7 +94,10 @@ wpa-ssid HOPE4G+
 wpa-psk 123456abcd
 
 
-# 17. search for packages
+# 2.0 APT related command
+## 1. check package info by apt-cache
 ```bash
-sudo apt-cache search 'PACKAGE-NAME'
+sudo apt-cache search 'PACKAGE-NAME' // search for a package
+sudo apt-cache show 'PACKAGE-NAME' // show the info of a package
+sudo apt-cache depends 'PACKAGE-NAME' // check dependencies of a package
 ```
