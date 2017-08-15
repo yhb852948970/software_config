@@ -97,9 +97,9 @@ wpa-psk 123456abcd
 # 2.0 APT related command
 ## 1. check package info by apt-cache
 ```bash
-sudo apt-cache search *<PACKAGE-NAME>* # search for a package
-sudo apt-cache show *<PACKAGE-NAME>* # show the info of a package
-sudo apt-cache depends *<PACKAGE-NAME>* # check dependencies of a package
+sudo apt-cache search <package> # search for a package
+sudo apt-cache show <package> # show the info of a package
+sudo apt-cache depends <package> # check dependencies of a package
 ```
 ## 2. apt-get 
 ```bash
