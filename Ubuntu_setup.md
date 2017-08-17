@@ -16,6 +16,7 @@ sudo apt-get install eclipse-cqt libxmlrpc-c++8-dev minicom
   - other packages need to be installed by download.
   1. angry ip scanner <br />
   2. CLion <br />
+  change the line in .desktop file in ~/.local/share/application to "Exec=bash -i -c "/opt/clion-2017.1.3/bin/clion.sh" %f" 
   
 ### 2. after install terminator, using this command to set default terminal 
 ```bash
