@@ -29,3 +29,8 @@ mount	-o	loop	UUID="7dd97bd2-4446-48fd-9d23-a8b03ffdd5ee"	/mnt
 ```bash
 dd	if=/dev/zero	of=/srv/loopdev	bs=1M	count=512
 ```
+
+# 10. using /proc to get system info
+```bash
+cat /proc/cmdline
+```
