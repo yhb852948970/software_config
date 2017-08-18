@@ -1,0 +1,11 @@
+[Unit]
+Description=AGVUI
+After=multi-user.target
+
+[Service]
+User=hope
+WorkingDirectory=/opt/agvui
+ExecStart=/opt/agvui/AGVUI
+
+[Install]
+WantedBy=multi-user.target
