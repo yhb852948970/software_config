@@ -109,3 +109,24 @@ sudo apt-get autoclean # delete partially downloaded packages, or packages no lo
 sudo apt-get clean # Removes all cached packages from/var/cache/apt/archives to free up disk space
 sudo apt-get -f install #Do a sanity check for broken packages. This tries to fix any “unmet dependency” messages.
 ```
+# 3.0 Using systemd to create upstart job
+1. create a foo.service file, with the following contents:
+[Unit]
+Description=AGVUI
+After=multi-user.target
+
+[Service]
+User=hope
+WorkingDirectory=/opt/agvui
+ExecStart=/opt/agvui/AGVUI
+
+[Install]
+WantedBy=multi-user.target
+
+2. put the foo.service file into /etc/systemd/system
+
+3. enable the service by
+```bash
+systemctl daemon-reload
+systemctl enable agvui.service
+```
