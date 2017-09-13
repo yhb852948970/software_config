@@ -44,21 +44,13 @@ rosrun image_view extract_images _sec_per_frame:=0 _filename_format:="frame%04i.
   ```
 - set _sec_per_frame to 0 to avoid missing any frames.  
   
-  
-  
 ## 6. rostest
 - run test for specific package
   ```
   catkin_make run_tests -DCATKIN_WHITELIST_PACKAGES="package_name"
   ```
-## 7. kill roscore
-```bash
-rosnode kill <node-name>
-killall -9 roscore
-killall -9 rosmaster
-```
 
-## 8. Set and get logger level
+## 7. Set and get logger level
 ```bash
 rosservice list
 rosservice call /node_name/get_loggers
@@ -66,7 +58,7 @@ rosservice call /node_name/set_logger_level <tab><tab>
 ```
 Then change the logger name and level accordingly.
 
-## 9. Using mux
+## 8. Using mux
 ```bash
 rosrun topic_tools mux output_topic_name input_topic_name_1 input_topic_name_2 mux:=node_name
 rosrun topic_tools mux cmd_vel move_base_cmd_vel joystick_cmd_vel mux:=mux_cmd_vel
