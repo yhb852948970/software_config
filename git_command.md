@@ -165,6 +165,13 @@ git rm filename
 git rm [-r] --cached filename
 ```
 
+## 2.11 git branch 
+### 2.11.1 Using --merged --no-merged to filter 
+```bash
+git branch --mergerd
+git branch --no-merged
+```
+
 ## 2.14 git reset
 ### 2.14.1 It can be used to remove staged files.  
 - `git reset` is the opposite of `git add`.   <br />
