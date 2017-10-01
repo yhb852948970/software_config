@@ -3,10 +3,11 @@ ROS terminal command
 
 # roscore
 ## 1. rosdep
-
-> rosdep update
-> cd ~/catkin_ws
-> rosdep install -y --from-paths ./src --ignore-src --rosdistro=indigo
+```
+rosdep update
+cd ~/catkin_ws
+rosdep install -y --from-paths ./src --ignore-src --rosdistro=indigo
+```
 
 ## 2. rosrun
   ```
