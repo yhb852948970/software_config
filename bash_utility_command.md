@@ -12,24 +12,15 @@ gksu nautilus
 sudo -i nautilus
   ```
 
-### 4. find command
-  ```  
-  find [path] [expression]
-  find /home/haibo -name filename
-  find ~/catkin_ws/src -name "*.cpp"  
-  ```
 
 ### 5. grep command 
 ```bash
 grep string_to_match filename
 grep -RHn "string_to_match"
 ```
-  - Using *-w* option to match the exact word.
-  - Using *-i* option to case insensitive. 
-  - Using *-n* to show line number of match in the file
+  - Using *-w* option to match the exact word. 
   - Using *-H* to show to file name of a match
   - Using *-R* to search in the sub-folder recursively
-  - Using *-v* to do reverse search
 
 ### 6. diff command to compare two files 
   ```bash
@@ -43,10 +34,6 @@ echo "This is a test. " | tee file1 -a
   ```
 the *-a* option is used to append to the file instead of rewrite the file. <br /> 
 
-### 11. check the linked libraries (.so)
-  ```bash
-  ldd // check the .so
-  ```
 ### 12. output the return/exit value
   ```bash
   echo $?
@@ -65,10 +52,6 @@ Add "USERNAME ALL=NOPASSWD: ALL"
 ### 15. add desktop/launch icon for an application
 /usr/share/applications/firefox.desktop
 
-### 16. using more to show file contents step by step
-  ```bash
-  more filename
-  ```
 ### 17. set up networks
 ```bash
 sudo ifdown wlan0
