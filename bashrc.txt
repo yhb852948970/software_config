@@ -1,9 +1,6 @@
 
 /*	bashrc		*/
 
-# uncomment this command to enable color in terminal
-force_color_prompt=yes
-
 # CUDA
 export PATH=$PATH:/usr/local/cuda/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
@@ -13,21 +10,3 @@ export CUDA_HOME=/usr/local/cuda
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opencv-2.4.13/lib/pkgconfig
 export PKG_CONFIG_PATH
 
-# For ROS
-source /opt/ros/indigo/setup.bash
-source /home/haibo/catkin_ws/devel/setup.bash
-
-# For Caffe
-export PATH=$PATH:/home/haibo/caffe/build/tools
-export PYTHONPATH=/home/haibo/caffe/python:$PYTHONPATH
-
-# Include path for c++
-CPLUS_INCLUDE_PATH=/opt/ros/indigo/include 
-CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/opencv-2.4.12/include
-export CPLUS_INCLUDE_PATH
-
-# My alias
-alias CUDA_CHECK='sudo ~/NVIDIA_CUDA-7.5_Samples/bin/x86_64/linux/release/deviceQuery'
-alias renet='sudo service network-manager restart'
-alias 'h=history | tail'
-alias 'hg=history | grep'
