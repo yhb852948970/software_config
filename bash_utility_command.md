@@ -1,43 +1,17 @@
 Bash utility commands
 =====================
-
-### 1. restart network
-  ```
-sudo service network-manager restart
-  ```
   
-### 3. using GUI with sudo permission
+### 1. using GUI with sudo permission
   ```
 gksu nautilus
 sudo -i nautilus
   ```
 
-
-### 5. grep command 
-```bash
-grep string_to_match filename
-grep -RHn "string_to_match"
-```
-  - Using *-w* option to match the exact word. 
-  - Using *-H* to show to file name of a match
-  - Using *-R* to search in the sub-folder recursively
-
-### 6. diff command to compare two files 
-  ```bash
-diff -u file1 file2
-  ```
-
-
-### 10. tee command to send outputs in two directions
+### 2. tee command to send outputs in two directions
   ```bash
 echo "This is a test. " | tee file1 -a
   ```
 the *-a* option is used to append to the file instead of rewrite the file. <br /> 
-
-### 12. output the return/exit value
-  ```bash
-  echo $?
-  ```
 
 ### 13. redirect terminal output to a file
   ```bash
