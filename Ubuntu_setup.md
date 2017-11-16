@@ -37,31 +37,12 @@ sudo apt-get install texlive-fonts-recommended
 sudo apt-get install fcitx-googlepinyin
 im-config
 ```
-  
-### 7. Setup nano editor
-Put the conf.nanorc file into /usr/share/nano directory. <br />
-Add .nanorc config file. <br />
-```bash
-touch ~/.nanorc
-include /usr/share/nano/sh.nanorc 
-include /usr/share/nano/c.nanorc 
-include /usr/share/nano/xml.nanorc 
-include /usr/share/nano/cmake.nanorc 
-include /usr/share/nano/python.nanorc 
-```
-When we want to open rosenv file, using this command
-```bash
-nano ~/rosenv -Y conf
-```
 
 ### 8. Stop error reporting
 ```bash
 gksudo gedit /etc/default/apport
 ```
 change to *enabled=0*
-
-### 9. config editor <br />
-e.g. *gedit* and *atom*
 
 ### 10. install gtest
 ```bash
